@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.2.0",
+    "@sendgrid/mail": "^8.1.5",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "i18next": "^25.3.2",

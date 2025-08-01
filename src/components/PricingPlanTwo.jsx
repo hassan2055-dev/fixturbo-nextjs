@@ -506,7 +506,6 @@ const PricingPlanTwo = () => {
                   style={modalStyles.input}
                 />
               </div>
-
               <div style={{ marginBottom: '15px' }}>
                 <label style={{ display: 'block', marginBottom: '5px', fontWeight: '500' }}>
                   Email Address

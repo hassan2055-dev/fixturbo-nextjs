@@ -38,20 +38,20 @@ const HeroTwo = () => {
                   Learn More
                 </a>
                 <div className="call-media-wrap">
-                  <div className="icon">
+                  {/* <div className="icon">
                     <Image 
                       src="/assets/img/icon/phone-1.svg" 
                       alt="Fixturbo" 
                       width={24}
                       height={24}
                     />
-                  </div>
+                  </div> */}
                   <div className="media-body">
-                    <h6 className="title text-white">Requesting A Call:</h6>
+                    {/* <h6 className="title text-white">Requesting A Call:</h6> */}
                     <h4 className="link">
-                      <a className="text-white" href="tel:6295550129">
+                      {/* <a className="text-white" href="tel:6295550129">
                         (629) 555-0129
-                      </a>
+                      </a> */}
                     </h4>
                   </div>
                 </div>

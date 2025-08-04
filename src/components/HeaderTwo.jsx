@@ -82,11 +82,11 @@ const HeaderTwo = () => {
                   </li>
                   <li>
                     <div className="icon">
-                      <i className="fas fa-map-marker-alt" />
+                      {/* <i className="fas fa-map-marker-alt" /> */}
                     </div>
                     <div className="header-grid-info-details">
-                      <p>6391 Elgin St. Celina, Delaware</p>
-                      <h6>Kentucky </h6>
+                      {/* <p>6391 Elgin St. Celina, Delaware</p>
+                      <h6>Kentucky </h6> */}
                     </div>
                   </li>
                 </ul>

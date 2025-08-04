@@ -160,17 +160,17 @@ const FooterAreaTwo = () => {
               <div className="widget footer-widget">                <h3 className="widget_title">Contact Us</h3>
                 <div className="widget-contact2">
                   <div className="widget-contact-grid">
-                    <div className="icon">
+                    {/* <div className="icon">
                       <i className="fas fa-map-marker-alt" />
-                    </div>
-                    <div className="contact-grid-details">
+                    </div> */}
+                    {/* <div className="contact-grid-details">
                       <p>Headquarters</p>
                       <h6>
                         1250 Auto Plaza Drive, Detroit
                         <p />
                         Michigan 48226
                       </h6>
-                    </div>
+                    </div> */}
                   </div>
                   {/* <div className="widget-contact-grid">
                     <div className="icon">

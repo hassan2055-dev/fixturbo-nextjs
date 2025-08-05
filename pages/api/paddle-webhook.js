@@ -1,38 +1,49 @@
 import getRawBody from 'raw-body';
 import qs from 'querystring';
-import sgMail from '@sendgrid/mail';
-
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+import nodemailer from 'nodemailer';
 
 export const config = {
   api: {
-    bodyParser: false,
+    bodyParser: false, // Required to handle Paddle's raw form data
   },
 };
 
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+
 export default async function handler(req, res) {
-  if (req.method !== 'POST') return res.status(405).end();
-
-  const raw = await getRawBody(req);
-  const body = qs.parse(raw.toString('utf8'));
-
-  if (
-    body.alert_name === 'payment_succeeded' ||
-    body.alert_name === 'checkout_completed'
-  ) {
-    const msg = {
-      to: 'rmoto7817@gmail.com',
-      from: 'rmoto7817@gmail.com', // must be your verified sender
-      subject: 'New Paddle Payment Received',
-      text: `A user has paid!\n\nDetails:\nEmail: ${body.email}\nName: ${body.customer_name}\nAmount: ${body.sale_gross}\nPlan: ${body.product_name}`,
-    };
-
-    try {
-      await sgMail.send(msg);
-    } catch (e) {
-      console.error('Email send error:', e);
-    }
+  if (req.method !== 'POST') {
+    return res.status(405).send('Method Not Allowed');
   }
 
-  res.status(200).end();
+  try {
+    const rawBody = await getRawBody(req);
+    const parsedBody = qs.parse(rawBody.toString());
+
+    const alertName = parsedBody['alert_name'];
+    const customerEmail = parsedBody['email'];
+    const amount = parsedBody['sale_gross'];
+    const currency = parsedBody['currency'];
+
+    if (alertName === 'payment_succeeded') {
+      await transporter.sendMail({
+        from: process.env.EMAIL_USER,
+        to: 'car.check.store@gmail.com', // or customerEmail
+        subject: '💰 Paddle Transaction Received!',
+        text: `Payment of ${amount} ${currency} received from ${customerEmail}`,
+      });
+
+      console.log('✅ Email sent');
+    }
+
+    res.status(200).send('Webhook received');
+  } catch (error) {
+    console.error('❌ Error handling webhook:', error);
+    res.status(500).send('Internal Server Error');
+  }
 }

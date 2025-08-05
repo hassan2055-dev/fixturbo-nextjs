@@ -24,7 +24,7 @@ export default async function handler(req, res) {
   try {
     const rawBody = await getRawBody(req);
     const parsedBody = qs.parse(rawBody.toString());
-
+    console.log('📨 Incoming webhook:', parsedBody);
     const alertName = parsedBody['alert_name'];
     const customerEmail = parsedBody['email'];
     const amount = parsedBody['sale_gross'];

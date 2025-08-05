@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 
 export const config = {
   api: {
-    bodyParser: false, // Required to handle Paddle's raw form data
+    bodyParser: true, // Required to handle Paddle's raw form data
   },
 };
 
@@ -22,20 +22,20 @@ export default async function handler(req, res) {
   }
 
   try {
-    const rawBody = await getRawBody(req);
-    const parsedBody = qs.parse(rawBody.toString());
-    console.log('📨 Incoming webhook:', parsedBody);
-    const alertName = parsedBody['alert_name'];
-    const customerEmail = parsedBody['email'];
-    const amount = parsedBody['sale_gross'];
-    const currency = parsedBody['currency'];
+    const payload = req.body;
+    console.log('📨 Incoming webhook:', payload);
 
-    if (alertName === 'payment_succeeded') {
+    const eventType = payload.event_type;
+    const total = payload.data?.details?.totals?.total;
+    const currency = payload.data?.currency_code;
+    const checkoutURL = payload.data?.checkout?.url;
+
+    if (eventType === 'transaction.created') {
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
-        to: 'car.check.store@gmail.com', // or customerEmail
-        subject: '💰 Paddle Transaction Received!',
-        text: `Payment of ${amount} ${currency} received from ${customerEmail}`,
+        to: 'car.check.store@gmail.com',
+        subject: '💰 Paddle Transaction Created!',
+        text: `New transaction for ${total} ${currency}. Checkout at: ${checkoutURL}`,
       });
 
       console.log('✅ Email sent');

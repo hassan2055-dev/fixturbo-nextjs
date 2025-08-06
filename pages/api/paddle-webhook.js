@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     const currency = payload.data?.currency_code;
     const checkoutURL = payload.data?.checkout?.url;
 
-    if (eventType === 'transaction.created') {
+    if (eventType === 'transaction.created' || eventType === 'transaction.completed') {
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
         to: 'car.check.store@gmail.com',

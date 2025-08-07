@@ -17,7 +17,7 @@ function App() {
           <Route exact path="/" element={<HomePageTwo />} />
           <Route exact path="/random" element={<ThankYouPage />} />
           {/* Catch-all route - redirect any non-existent URLs to homepage */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

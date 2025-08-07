@@ -6,6 +6,8 @@ const ThankYouPage = () => {
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    console.log("page loaded");
+;
   }, []);
 
   return (

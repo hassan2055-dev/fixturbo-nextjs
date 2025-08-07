@@ -1,10 +1,9 @@
-import getRawBody from 'raw-body';
-import qs from 'querystring';
+import { Readable } from 'stream';
 import nodemailer from 'nodemailer';
 
 export const config = {
   api: {
-    bodyParser: true, // Required to handle Paddle's raw form data
+    bodyParser: false, // Disable Next.js's default bodyParser to handle raw body for signature verification
   },
 };
 
@@ -47,3 +46,4 @@ export default async function handler(req, res) {
     res.status(500).send('Internal Server Error');
   }
 }
+

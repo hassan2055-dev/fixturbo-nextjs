@@ -13,6 +13,7 @@
     "isotope-layout": "^3.0.6",
     "next": "^14.0.0",
     "nodemailer": "^7.0.5",
+    "paddle": "^1.0.0",
     "querystring": "^0.2.1",
     "raw-body": "^3.0.0",
     "rc-slider": "^10.5.0",
@@ -25,6 +26,7 @@
     "react-on-screen": "^2.1.1",
     "react-range": "^1.8.14",
     "react-scroll-to-top": "^3.0.0",
+    "stream": "^0.0.3",
     "swiper": "^9.1.1",
     "web-vitals": "^5.0.3"
   },

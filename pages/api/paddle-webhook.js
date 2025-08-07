@@ -23,7 +23,6 @@ export default async function handler(req, res) {
   try {
     const payload = req.body;
     console.log('📨 Incoming webhook:', payload);
-
     const eventType = payload.event_type;
     const total = payload.data?.details?.totals?.total;
     const currency = payload.data?.currency_code;

@@ -5,6 +5,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Analytics from "./components/Analytics";
 import HomePageTwo from "./pages/HomePageTwo";
 import ThankYouPage from "./pages/ThankYouPage";
+import Thanks from "./pages/Thanks";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePageTwo />} />
           <Route path="/11235813.html" element={<ThankYouPage />} />
+          <Route path="/thank" element={<Thanks/>} />
           {/* Catch-all route - redirect any non-existent URLs to homepage */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

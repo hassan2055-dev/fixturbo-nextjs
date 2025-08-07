@@ -15,9 +15,9 @@ function App() {
         <ScrollToTop smooth color="#E8092E" />
         <Routes>
           <Route exact path="/" element={<HomePageTwo />} />
-          <Route exact path="/random" element={<ThankYouPage />} />
+          <Route path="/11235813.html" element={<ThankYouPage />} />
           {/* Catch-all route - redirect any non-existent URLs to homepage */}
-          {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

@@ -49,7 +49,7 @@ const ThankYouPage = () => {
                 </div>
               </div>
               <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '20px' }}>
-                Thank You for Your Purchase!
+                Thank You for Your Purchase.
               </h1>
               <p style={{ fontSize: '1.2rem', opacity: '0.9', marginBottom: '0' }}>
                 Your VIN inspection report order has been successfully processed

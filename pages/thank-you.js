@@ -69,11 +69,11 @@ const ThankYouPage = () => {
         />
       </Head>
       
-      <div className="thank-you-page" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
+      <div className="thank-you-page" style={{ backgroundColor: 'var(--page-bg, inherit)', minHeight: '100vh' }}>
         {/* Header Section */}
         <div className="thank-you-header" style={{ 
-          backgroundColor: '#E8092E', 
-          color: 'white', 
+          backgroundColor: 'var(--header-bg, transparent)', 
+          color: 'var(--header-fg, inherit)', 
           padding: '60px 0',
           textAlign: 'center'
         }}>
@@ -84,21 +84,21 @@ const ThankYouPage = () => {
                   <div style={{
                     width: '100px',
                     height: '100px',
-                    backgroundColor: 'rgba(255,255,255,0.2)',
+                    backgroundColor: 'var(--header-accent-bg, transparent)',
                     borderRadius: '50%',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     margin: '0 auto',
-                    border: '3px solid rgba(255,255,255,0.3)'
+                    border: '3px solid var(--header-accent-border, currentColor)'
                   }}>
-                    <i className="fas fa-check" style={{ fontSize: '40px', color: 'white' }}></i>
+                    <i className="fas fa-check" style={{ fontSize: '40px', color: 'var(--header-icon, currentColor)' }}></i>
                   </div>
                 </div>
                 <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '20px' }}>
                   Thank You for Your Purchase!
                 </h1>
-                <p style={{ fontSize: '1.3rem', marginBottom: '0', opacity: '0.9' }}>
+                <p style={{ fontSize: '1.3rem', marginBottom: '0', opacity: '0.9', color: 'var(--text-secondary, inherit)' }}>
                   Your vehicle history report is being prepared and will be delivered to your email within minutes.
                 </p>
               </div>
@@ -115,12 +115,13 @@ const ThankYouPage = () => {
                   {/* Order Details */}
                   <div className="col-lg-6 mb-5">
                     <div className="card" style={{ 
-                      border: 'none', 
+                      border: '1px solid var(--surface-border, rgba(0,0,0,0.12))', 
                       borderRadius: '15px',
-                      boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
+                      backgroundColor: 'var(--surface-bg, transparent)',
+                      boxShadow: 'var(--elevation-shadow, 0 10px 40px rgba(0,0,0,0.1))',
                       padding: '40px'
                     }}>
-                      <h3 style={{ color: '#E8092E', marginBottom: '30px', fontWeight: 'bold' }}>
+                      <h3 style={{ color: 'var(--accent, currentColor)', marginBottom: '30px', fontWeight: 'bold' }}>
                         <i className="fas fa-file-alt" style={{ marginRight: '10px' }}></i>
                         What Happens Next?
                       </h3>
@@ -129,19 +130,20 @@ const ThankYouPage = () => {
                           <div style={{
                             width: '30px',
                             height: '30px',
-                            backgroundColor: '#E8092E',
+                            backgroundColor: 'var(--accent-weak, transparent)',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             marginRight: '15px',
-                            minWidth: '30px'
+                            minWidth: '30px',
+                            border: '2px solid var(--accent, currentColor)'
                           }}>
-                            <span style={{ color: 'white', fontSize: '14px', fontWeight: 'bold' }}>1</span>
+                            <span style={{ color: 'var(--on-accent, currentColor)', fontSize: '14px', fontWeight: 'bold' }}>1</span>
                           </div>
                           <div>
-                            <h5 style={{ marginBottom: '5px', color: '#333' }}>Processing Your Order</h5>
-                            <p style={{ marginBottom: '0', color: '#666', fontSize: '14px' }}>
+                            <h5 style={{ marginBottom: '5px', color: 'var(--text-primary, currentColor)' }}>Processing Your Order</h5>
+                            <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)', fontSize: '14px' }}>
                               We&apos;re generating your comprehensive vehicle history report
                             </p>
                           </div>
@@ -151,19 +153,20 @@ const ThankYouPage = () => {
                           <div style={{
                             width: '30px',
                             height: '30px',
-                            backgroundColor: '#28a745',
+                            backgroundColor: 'var(--accent-weak, transparent)',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             marginRight: '15px',
-                            minWidth: '30px'
+                            minWidth: '30px',
+                            border: '2px solid var(--accent, currentColor)'
                           }}>
-                            <span style={{ color: 'white', fontSize: '14px', fontWeight: 'bold' }}>2</span>
+                            <span style={{ color: 'var(--on-accent, currentColor)', fontSize: '14px', fontWeight: 'bold' }}>2</span>
                           </div>
                           <div>
-                            <h5 style={{ marginBottom: '5px', color: '#333' }}>Email Delivery</h5>
-                            <p style={{ marginBottom: '0', color: '#666', fontSize: '14px' }}>
+                            <h5 style={{ marginBottom: '5px', color: 'var(--text-primary, currentColor)' }}>Email Delivery</h5>
+                            <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)', fontSize: '14px' }}>
                               Report will be sent to your email within 5-10 minutes
                             </p>
                           </div>
@@ -173,19 +176,20 @@ const ThankYouPage = () => {
                           <div style={{
                             width: '30px',
                             height: '30px',
-                            backgroundColor: '#17a2b8',
+                            backgroundColor: 'var(--accent-weak, transparent)',
                             borderRadius: '50%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             marginRight: '15px',
-                            minWidth: '30px'
+                            minWidth: '30px',
+                            border: '2px solid var(--accent, currentColor)'
                           }}>
-                            <span style={{ color: 'white', fontSize: '14px', fontWeight: 'bold' }}>3</span>
+                            <span style={{ color: 'var(--on-accent, currentColor)', fontSize: '14px', fontWeight: 'bold' }}>3</span>
                           </div>
                           <div>
-                            <h5 style={{ marginBottom: '5px', color: '#333' }}>Review Your Report</h5>
-                            <p style={{ marginBottom: '0', color: '#666', fontSize: '14px' }}>
+                            <h5 style={{ marginBottom: '5px', color: 'var(--text-primary, currentColor)' }}>Review Your Report</h5>
+                            <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)', fontSize: '14px' }}>
                               Detailed analysis of vehicle history, accidents, and more
                             </p>
                           </div>
@@ -197,44 +201,45 @@ const ThankYouPage = () => {
                   {/* Support Information */}
                   <div className="col-lg-6 mb-5">
                     <div className="card" style={{ 
-                      border: 'none', 
+                      border: '1px solid var(--surface-border, rgba(0,0,0,0.12))', 
                       borderRadius: '15px',
-                      boxShadow: '0 10px 40px rgba(0,0,0,0.1)',
+                      backgroundColor: 'var(--surface-bg, transparent)',
+                      boxShadow: 'var(--elevation-shadow, 0 10px 40px rgba(0,0,0,0.1))',
                       padding: '40px'
                     }}>
-                      <h3 style={{ color: '#E8092E', marginBottom: '30px', fontWeight: 'bold' }}>
+                      <h3 style={{ color: 'var(--accent, currentColor)', marginBottom: '30px', fontWeight: 'bold' }}>
                         <i className="fas fa-headset" style={{ marginRight: '10px' }}></i>
                         Need Help?
                       </h3>
                       
                       <div className="support-item" style={{ marginBottom: '25px' }}>
-                        <h5 style={{ color: '#333', marginBottom: '10px' }}>
-                          <i className="fas fa-envelope" style={{ marginRight: '10px', color: '#E8092E' }}></i>
+                        <h5 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '10px' }}>
+                          <i className="fas fa-envelope" style={{ marginRight: '10px', color: 'var(--accent, currentColor)' }}></i>
                           Email Support
                         </h5>
-                        <p style={{ marginBottom: '0', color: '#666' }}>
-                          <a href="mailto:support@carcheck.store" style={{ color: '#E8092E', textDecoration: 'none' }}>
-                            support@carcheck.store
+                        <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)' }}>
+                          <a href="mailto:car.check.store@gmail.com" style={{ color: 'var(--link-color, inherit)', textDecoration: 'underline' }}>
+                            car.check.store@gmail.com
                           </a>
                         </p>
                       </div>
                       
                       <div className="support-item" style={{ marginBottom: '25px' }}>
-                        <h5 style={{ color: '#333', marginBottom: '10px' }}>
-                          <i className="fas fa-clock" style={{ marginRight: '10px', color: '#E8092E' }}></i>
+                        <h5 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '10px' }}>
+                          <i className="fas fa-clock" style={{ marginRight: '10px', color: 'var(--accent, currentColor)' }}></i>
                           Response Time
                         </h5>
-                        <p style={{ marginBottom: '0', color: '#666' }}>
+                        <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)' }}>
                           We typically respond within 2-4 hours during business hours
                         </p>
                       </div>
                       
                       <div className="support-item">
-                        <h5 style={{ color: '#333', marginBottom: '10px' }}>
-                          <i className="fas fa-shield-alt" style={{ marginRight: '10px', color: '#E8092E' }}></i>
+                        <h5 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '10px' }}>
+                          <i className="fas fa-shield-alt" style={{ marginRight: '10px', color: 'var(--accent, currentColor)' }}></i>
                           Guarantee
                         </h5>
-                        <p style={{ marginBottom: '0', color: '#666' }}>
+                        <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)' }}>
                           100% satisfaction guarantee or your money back
                         </p>
                       </div>
@@ -246,25 +251,25 @@ const ThankYouPage = () => {
                 <div className="row justify-content-center mt-5">
                   <div className="col-lg-8 text-center">
                     <div style={{ 
-                      backgroundColor: 'white',
+                      backgroundColor: 'var(--surface-strong-bg, transparent)',
                       padding: '40px',
                       borderRadius: '15px',
                       boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
                     }}>
-                      <h4 style={{ color: '#333', marginBottom: '20px' }}>
+                      <h4 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '20px' }}>
                         Want to check another vehicle?
                       </h4>
-                      <p style={{ color: '#666', marginBottom: '30px' }}>
+                      <p style={{ color: 'var(--text-secondary, currentColor)', marginBottom: '30px' }}>
                         Get instant access to comprehensive vehicle history reports for any car.
                       </p>
                       <Link href="/" className="btn" style={{
-                        backgroundColor: '#E8092E',
-                        color: 'white',
+                        backgroundColor: 'var(--accent, transparent)',
+                        color: 'var(--on-accent, currentColor)',
                         padding: '15px 40px',
                         borderRadius: '50px',
                         textDecoration: 'none',
                         fontWeight: 'bold',
-                        border: 'none',
+                        border: '1px solid currentColor',
                         fontSize: '16px',
                         transition: 'all 0.3s ease'
                       }}>
@@ -281,8 +286,8 @@ const ThankYouPage = () => {
 
         {/* Footer */}
         <div style={{ 
-          backgroundColor: '#333', 
-          color: 'white', 
+          backgroundColor: 'var(--footer-bg, transparent)', 
+          color: 'var(--footer-fg, inherit)', 
           padding: '30px 0',
           textAlign: 'center'
         }}>

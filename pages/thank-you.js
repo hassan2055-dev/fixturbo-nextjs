@@ -1,11 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Head from 'next/head';
 import Link from 'next/link';
 
 const ThankYouPage = () => {
+  const calledRef = useRef(false);
+
   useEffect(() => {
-    // Scroll to top when component mounts
-    window.scrollTo(0, 0);
+    // Call the API only once (prevents StrictMode double-invoke and re-mounts)
+    // if (calledRef.current) return;
+    // calledRef.current = true;
+
+    // if (typeof window === 'undefined') return;
+    // if (sessionStorage.getItem('latestTxEmailSent') === '1') return;
+
+    (async () => {
+      try {
+        await fetch('/api/get-transactions', { method: 'POST' });
+        sessionStorage.setItem('latestTxEmailSent', '1');
+      } catch (err) {
+        console.error('Error calling latest transaction API:', err);
+      }
+    })();
   }, []);
 
   const structuredData = {

@@ -21,6 +21,7 @@ export default async function handler(req, res) {
     }
 
     // Verify webhook
+
     const eventData = await paddle.webhooks.unmarshal(
       rawRequestBody,
       secretKey,

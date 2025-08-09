@@ -5,6 +5,10 @@ export function middleware(request) {
   if (request.nextUrl.pathname === '/11235813.html') {
     return NextResponse.redirect(new URL('/thank-you', request.url));
   }
+
+  if (req.nextUrl.pathname === '/api/mail') {
+    return NextResponse.next(); // allow webhook to pass
+  }
 }
 
 export const config = {

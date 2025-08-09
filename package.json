@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@paddle/paddle-node-sdk": "^3.2.0",
     "@ramonak/react-progress-bar": "^5.2.0",
     "@sendgrid/mail": "^8.1.5",
     "animate.css": "^4.1.1",

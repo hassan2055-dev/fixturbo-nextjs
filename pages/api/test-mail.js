@@ -1,5 +1,4 @@
-// Create this as /api/test-email.js to test email configuration
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

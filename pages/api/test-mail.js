@@ -11,6 +11,7 @@ export default async function handler(req, res) {
     console.log('EMAIL_PASS length:', process.env.EMAIL_PASS?.length || 0);
     console.log('EMAIL_PASS preview:', process.env.EMAIL_PASS ? process.env.EMAIL_PASS.substring(0, 4) + '****' : 'MISSING');
 
+    
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
       return res.status(500).json({
         error: 'Missing email credentials',

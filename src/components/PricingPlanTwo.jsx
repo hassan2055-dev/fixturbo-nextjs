@@ -82,9 +82,9 @@ const PricingPlanTwo = () => {
 
   // Base prices in USD
   const BASE_PRICES = {
-    silver: 29.99,
-    gold: 49.99,
-    platinum: 59.99
+    silver: 30.99,
+    gold: 60.99,
+    platinum: 90.99
   };
 
   // Exchange rates

@@ -11,8 +11,8 @@ export default async function handler(req, res) {
       headers: {
         Authorization: `Bearer ${process.env.PADDLE_API_KEY}`,
         'Content-Type': 'application/json',
-      }
-
+      },
+      params: { per_page: 100, order_by: 'created_at[desc]' },
     });
 
     const list = Array.isArray(data?.data) ? data.data : [];

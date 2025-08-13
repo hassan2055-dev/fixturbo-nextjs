@@ -74,9 +74,9 @@ const PricingPlanTwo = () => {
   const CONFIG = {
     clientToken: "live_57a7704d22d689a024bdfcbfa1c",
     prices: {
-      silver: "pri_01jykaf1t5gryns9vsdkcbk3mj",
-      gold: "pri_01jykanfvhz2kh2sp1wjs39z99",
-      platinum: "pri_01jykaqf57xb633t461qes8b7g"
+      silver: "pri_01k2hte2d4p6r7z81j9kwfyj1q",
+      gold: "pri_01k2htft2gxs71cnjjnwvcs6en",
+      platinum: "pri_01k2hthk8hjm2bmr6hmv6zamwh"
     }
   };
 

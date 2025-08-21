@@ -36,7 +36,7 @@ const FooterAreaTwo = () => {
                 <h3 className="widget_title">About VIN Inspector Pro</h3>
                 <p className="footer-text mb-30">
                   Leading provider of comprehensive VIN-based vehicle history reports. 
-                  Trusted by millions of car buyers, dealers, and automotive professionals 
+                  Trusted by car buyers, dealers, and automotive professionals 
                   for accurate vehicle inspection data.
                 </p>
                 <div className="social-btn style3">

@@ -15,27 +15,27 @@ const HeroTwo = () => {
         <div className="row">
           <div className="col-xxl-6 col-xl-5 col-lg-8">
             <div className="hero-style2">
-              <span className="sub-title text-white">Growth Accelerator</span>
+              <span className="sub-title text-white">VIN Decoder & Vehicle History</span>
               <h1 className="hero-title text-white">
-                Crafting{" "}
+                Get Instant{" "}
                 <span>
                   <Image 
                     src="/assets/img/hero/hero_shape_2.png" 
-                    alt="Fixturbo" 
+                    alt="VIN Report" 
                     width={100}
                     height={40}
                     priority
                   />
-                  Automotive
+                  Vehicle
                 </span>{" "}
-                Excellence One Repair At Time
+                Inspection Report from VIN
               </h1>
               <p className="hero-text text-white">
-                Professional car inspection services you can trust. Our certified technicians provide comprehensive vehicle assessments to ensure your safety and peace of mind on the road.
+                Decode any VIN number instantly and get comprehensive vehicle history reports. Access detailed information about accidents, recalls, ownership history, and technical specifications to make informed decisions.
               </p>
               <div className="btn-group">
                 <a href="#about" className="btn">
-                  Learn More
+                  Get VIN Report
                 </a>
                 <div className="call-media-wrap">
                   {/* <div className="icon">

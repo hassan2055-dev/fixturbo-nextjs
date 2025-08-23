@@ -230,7 +230,7 @@ const ThankYouPage = () => {
                           Response Time
                         </h5>
                         <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)' }}>
-                          We typically respond within 2-4 hours during business hours
+                          We typically respond within 1 to 2 business days.
                         </p>
                       </div>
                       

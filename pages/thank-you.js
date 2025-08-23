@@ -39,7 +39,7 @@ const ThankYouPage = () => {
   return (
     <>
       <Head>
-        <title>Thank You - Car Check Store | Order Confirmation</title>
+        <title>Thank You | Order Confirmation</title>
         <meta 
           name="description" 
           content="Thank you for your purchase! Your vehicle history report from Car Check Store is being prepared and will be delivered to your email within minutes." 
@@ -99,7 +99,7 @@ const ThankYouPage = () => {
                   Thank You for Your Purchase!
                 </h1>
                 <p style={{ fontSize: '1.3rem', marginBottom: '0', opacity: '0.9', color: 'var(--text-secondary, inherit)' }}>
-                  Your vehicle history report is being prepared and will be delivered to your email within minutes.
+                  Your vehicle history report is being prepared and will be delivered to your email shortly.
                 </p>
               </div>
             </div>
@@ -167,7 +167,7 @@ const ThankYouPage = () => {
                           <div>
                             <h5 style={{ marginBottom: '5px', color: 'var(--text-primary, currentColor)' }}>Email Delivery</h5>
                             <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)', fontSize: '14px' }}>
-                              Report will be sent to your email within 5-10 minutes
+                              Report will be sent to your email within 12 hours.
                             </p>
                           </div>
                         </div>
@@ -219,7 +219,7 @@ const ThankYouPage = () => {
                         </h5>
                         <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)' }}>
                           <a href="mailto:car.check.store@gmail.com" style={{ color: 'var(--link-color, inherit)', textDecoration: 'underline' }}>
-                            car.check.store@gmail.com
+                            car.check.store@gmail.com or info@historivin.store
                           </a>
                         </p>
                       </div>
@@ -293,7 +293,7 @@ const ThankYouPage = () => {
         }}>
           <div className="container">
             <p style={{ marginBottom: '0', opacity: '0.8' }}>
-              © 2024 Car Check Store. All rights reserved.
+              © 2020 All rights reserved.
             </p>
           </div>
         </div>

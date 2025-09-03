@@ -87,8 +87,16 @@ export default async function handler(req, res) {
       <p><b>Event Type:</b> ${eventData.eventType}</p>
       <p><b>Event ID:</b> ${eventData.eventId || 'N/A'}</p>
       <p><b>Occurred At:</b> ${eventData.occurredAt || 'N/A'}</p>
-      <pre>${JSON.stringify(eventData.data, null, 2)}</pre>
+      ${eventData.data.items && eventData.data.items.length > 0 ? `
+      <p><b>Product:</b> ${eventData.data.items[0].price.name || "Unknown Product"}</p>
+      <p><b>Amount:</b> $${((eventData.data.items[0].price.unitPrice.amount || 0) / 100).toFixed(2)} ${eventData.data.items[0].price.unitPrice.currencyCode || 'USD'}</p>
+      <p><b>Customer ID:</b> ${eventData.data.customerId || 'N/A'}</p>
+      <p><b>Transaction ID:</b> ${eventData.data.id || 'N/A'}</p>
+      <p><b>Status:</b> ${eventData.data.status || 'N/A'}</p>
+      ` : '<p><b>No items found in transaction</b></p>'}
+      
     `;
+    // <pre>${JSON.stringify(eventData.data, null, 2)}</pre>
 
     // Customize email based on event type
     switch (eventData.eventType) {

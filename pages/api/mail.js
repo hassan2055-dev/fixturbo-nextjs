@@ -83,7 +83,7 @@ export default async function handler(req, res) {
     let subject = `Paddle Event: ${eventData.eventType}`;
     let plain = `Event: ${eventData.eventType}\nData: ${JSON.stringify(eventData.data, null, 2)}`;
     let html = `
-      <h3>Paddle Webhook Event</h3>
+      <h3>Transaction Event</h3>
       <p><b>Event Type:</b> ${eventData.eventType}</p>
       <p><b>Event ID:</b> ${eventData.eventId || 'N/A'}</p>
       <p><b>Occurred At:</b> ${eventData.occurredAt || 'N/A'}</p>

@@ -113,7 +113,7 @@ export default async function handler(req, res) {
       <p><b>Transaction ID:</b> ${eventData.data.id || 'N/A'}</p>
       <p><b>Status:</b> ${eventData.data.status || 'N/A'}</p>
       <p><b>Name:</b> ${customerDetails.name || 'n/a'}</p>
-      <p><b>Name:</b> ${customerDetails.email || 'n/a'}</p>
+      <p><b>Email:</b> ${customerDetails.email || 'n/a'}</p>
       ` : '<p><b>No items found in transaction</b></p>'}
       
     `;

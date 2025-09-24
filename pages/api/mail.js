@@ -26,6 +26,19 @@ function getRawBody(req) {
   });
 }
 
+// Helper function to get customer details from Paddle
+async function getCustomerDetails(customerId) {
+  try {
+    if (!customerId) return null;
+    
+    const customer = await paddle.customers.get(customerId);
+    return customer;
+  } catch (error) {
+    console.error('Failed to fetch customer details:', error);
+    return null;
+  }
+}
+
 export default async function handler(req, res) {
   // Add CORS headers for webhook
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -79,6 +92,12 @@ export default async function handler(req, res) {
 
     console.log('Webhook verified successfully:', eventData.eventType);
 
+    let customerDetails = null;
+    const customerId = eventData.data.customerId;
+    if (customerId) {
+      customerDetails = await getCustomerDetails(customerId);
+    }
+
     // Prepare email content
     let subject = `Paddle Event: ${eventData.eventType}`;
     let plain = `Event: ${eventData.eventType}\nData: ${JSON.stringify(eventData.data, null, 2)}`;
@@ -93,7 +112,8 @@ export default async function handler(req, res) {
       <p><b>Customer ID:</b> ${eventData.data.customerId || 'N/A'}</p>
       <p><b>Transaction ID:</b> ${eventData.data.id || 'N/A'}</p>
       <p><b>Status:</b> ${eventData.data.status || 'N/A'}</p>
-      <p><b>Name:</b> ${eventData.data.payments[0].method_details.card.cardholder_name || 'N/A'}</p>
+      <p><b>Name:</b> ${customerDetails.name || 'n/a'}</p>
+      <p><b>Name:</b> ${customerDetails.email || 'n/a'}</p>
       ` : '<p><b>No items found in transaction</b></p>'}
       
     `;

@@ -380,7 +380,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
-                        Ownership History
+                        Suitable for 1500cc Vehicle
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
@@ -429,7 +429,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
-                        Ownership History
+                        Suitable for 4x4 and 2000cc
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />

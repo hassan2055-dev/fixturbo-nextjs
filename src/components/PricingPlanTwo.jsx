@@ -380,7 +380,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
-                        Suitable for 1500cc Vehicle
+                        <b>Suitable for 1500cc Vehicle</b>
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
@@ -427,9 +427,9 @@ const PricingPlanTwo = () => {
                         <i className="fas fa-angle-double-right" />
                         1 Vehicle Report
                       </li>
-                      <li>
+                      <li >
                         <i className="fas fa-angle-double-right" />
-                        Suitable for 4x4 and 2000cc
+                        <b style={{ color: 'red' }}> Suitable for 4x4 and 2000cc</b>
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />

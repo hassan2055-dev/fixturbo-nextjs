@@ -380,7 +380,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
-                        <b>Suitable for 1500cc Vehicle</b>
+                        <b style={{ color: 'red' }}>Suitable for 1500cc Vehicle</b>
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />

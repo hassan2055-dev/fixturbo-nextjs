@@ -169,8 +169,7 @@ const HomePage = () => {
       {/* Pricing Plan Two */}
       <PricingPlanTwo />
 
-      {/* Appointment Area Two */}
-      <AppointmentAreaTwo />
+
 
       {/* Team Area Two */}
       <TeamAreaTwo />

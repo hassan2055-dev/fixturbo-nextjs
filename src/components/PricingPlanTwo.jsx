@@ -83,7 +83,7 @@ const PricingPlanTwo = () => {
 
   // Base prices in USD
   const BASE_PRICES = {
-    silver: 30.99,
+    silver: 40.99,
     gold: 60.99,
     platinum: 90.99
   };

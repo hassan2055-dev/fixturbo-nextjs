@@ -9,6 +9,7 @@ const PricingPlanTwo = () => {
     email: '',
     vin: ''
   });
+  
   const [loading, setLoading] = useState(false);
 
   // Modal styles

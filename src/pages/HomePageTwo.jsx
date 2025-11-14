@@ -10,7 +10,6 @@ import WhyChooseUsOne from "../components/WhyChooseUsOne";
 import ProcessAreaTwo from "../components/ProcessAreaTwo";
 import CTAAreaTwo from "../components/CTAAreaTwo";
 import PricingPlanTwo from "../components/PricingPlanTwo";
-import AppointmentAreaTwo from "../components/AppointmentAreaTwo";
 import TeamAreaTwo from "../components/TeamAreaTwo";
 import ClientAreaTwo from "../components/ClientAreaTwo";
 import FaqAreaTwo from "../components/FaqAreaTwo";
@@ -69,9 +68,6 @@ const HomePageTwo = () => {
 
       {/* Pricing Plan Two */}
       <PricingPlanTwo />
-
-      {/* Appointment Area Two */}
-      <AppointmentAreaTwo />
 
       {/* Team Area Two */}
       <TeamAreaTwo />

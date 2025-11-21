@@ -3,320 +3,441 @@ import React from "react";
 import Link from "next/link";
 
 const FooterAreaTwo = () => {
-  return (    <footer
-      className="footer-wrapper footer-layout2"
-      style={{ backgroundImage: "url(assets/img/bg/footer-bg2-1.png)" }}
-    >
-      <div className="container">
-        <div className="footer-top-2">          <div className="footer-logo">
-            <Link href="/">
-              <img src="/assets/img/logo-white.svg" alt="Car Check Store" />
-            </Link>
-          </div>
-          <h3 className="footer-top-title text-white">
-            Get VIN Report Updates & Industry News
-          </h3>
-          <form className="newsletter-form">
-            <div className="form-group">
-              <input
-                className="form-control"
-                type="email"
-                placeholder="Enter Your Email for VIN Updates"
-                required=""
-              />
-            </div>
-            <button type="submit" className="btn">
-              <i className="fas fa-arrow-right" />
-            </button>
-          </form>
-        </div>
-        <div className="widget-area">
-          <div className="row justify-content-between">            <div className="col-md-6 col-xl-3">
-              <div className="widget footer-widget widget-about">
-                <h3 className="widget_title">About VIN Inspector Pro</h3>
-                <p className="footer-text mb-30">
-                  Leading provider of comprehensive VIN-based vehicle history reports. 
-                  
-                  Trusted by car buyers, dealers, and automotive professionals 
-                  for accurate vehicle inspection data.
+  return (
+    <>
+      <footer className="modern-footer">
+        <div className="footer-cta-section">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-7">
+                <h2 className="footer-cta-title">Save Thousands of Dollars</h2>
+                <p className="footer-cta-subtitle">
+                  Learn everything there is to know about your next car
                 </p>
-                <div className="social-btn style3">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </div>
               </div>
-            </div>            <div className="col-md-6 col-xl-auto">
-              <div className="widget widget_nav_menu footer-widget">
-                <h3 className="widget_title">Quick Links</h3>
-                <div className="menu-all-pages-container">
-                  <ul className="menu">
-                    <li>
-                      <a href="#about">About Us</a>
-                    </li>
-                    <li>
-                      <a href="#team">Our Team</a>
-                    </li>
-                    <li>
-                      <a href="#faq">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="#privacy">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a href="#sample">Sample Report</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>            <div className="col-md-6 col-xl-auto">
-              <div className="widget widget_nav_menu footer-widget">
-                <h3 className="widget_title">VIN Report Services</h3>
-                <div className="menu-all-pages-container">
-                  <ul className="menu">
-                    <li>
-                      <Link 
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const pricingSection = document.getElementById('pricing-section');
-                          if (pricingSection) {
-                            pricingSection.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                      >
-                        Basic VIN Check
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const pricingSection = document.getElementById('pricing-section');
-                          if (pricingSection) {
-                            pricingSection.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                      >
-                        Detailed History Report
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const pricingSection = document.getElementById('pricing-section');
-                          if (pricingSection) {
-                            pricingSection.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                      >
-                        Premium Inspection
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const pricingSection = document.getElementById('pricing-section');
-                          if (pricingSection) {
-                            pricingSection.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                      >
-                        Bulk VIN Reports
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          const pricingSection = document.getElementById('pricing-section');
-                          if (pricingSection) {
-                            pricingSection.scrollIntoView({ behavior: 'smooth' });
-                          }
-                        }}
-                      >
-                        Fleet Management
-                      </Link>
-                    </li>
-                  </ul>
+              <div className="col-lg-5">
+                <div className="footer-vin-input">
+                  <div className="tab-selector-footer">
+                    <button className="tab-btn-footer active">by VIN</button>
+                    <button className="tab-btn-footer">by US License Plate</button>
+                  </div>
+                  <form className="vin-input-form-footer">
+                    <input 
+                      type="text"
+                      placeholder="Enter VIN Number"
+                      className="vin-input-footer"
+                    />
+                    <button type="submit" className="check-btn-footer">
+                      Check Now
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-xl-auto">
-              <div className="widget footer-widget">                <h3 className="widget_title">Contact Us</h3>
-                <div className="widget-contact2">
-                  <div className="widget-contact-grid">
-                    {/* <div className="icon">
-                      <i className="fas fa-map-marker-alt" />
-                    </div> */}
-                    {/* <div className="contact-grid-details">
-                      <p>Headquarters</p>
-                      <h6>
-                        1250 Auto Plaza Drive, Detroit
-                        <p />
-                        Michigan 48226
-                      </h6>
-                    </div> */}
-                  </div>
-                  {/* <div className="widget-contact-grid">
-                    <div className="icon">
-                      <i className="fas fa-phone-alt" />
-                    </div>
-                    <div className="contact-grid-details">
-                      <p>VIN Support Line</p>
-                      <h6>
-                        <Link href="tel:8881234567">1-888-VIN-REPORTS</Link>
-                        <p />
-                        (1-888-846-7376)
-                      </h6>
-                    </div>
-                  </div> */}
-                  <div className="widget-contact-grid">
-                    <div className="icon">
-                      <i className="fas fa-envelope" />
-                    </div>
-                    <div className="contact-grid-details">
-                      <p>Email Support</p>
-                      <h6>
-                        <Link href="mailto:car.check.store@gmail.com">
-                          car.check.store@gmail.com
-                        </Link>
-                        <p />
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>        </div>
-      </div>
-      
-      {/* Trusted Partners Section */}
-      <div className="trusted-partners-section" style={{ 
-        backgroundColor: 'rgba(255,255,255,0.05)', 
-        padding: '40px 0',
-        borderTop: '1px solid rgba(255,255,255,0.1)',
-        borderBottom: '1px solid rgba(255,255,255,0.1)'
-      }}>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4">
-              <h5 className="text-white" style={{ marginBottom: '15px', fontSize: '1.1rem' }}>
-                <i className="fas fa-shield-alt" style={{ marginRight: '10px', color: '#4CAF50' }}></i>
-                Trusted Data Partners
-              </h5>
-              <p className="text-white-50" style={{ fontSize: '0.9rem', margin: '0' }}>
-                Official data sources for accurate vehicle information
-              </p>
-            </div>            <div className="col-lg-8">
-              <div className="row align-items-center justify-content-lg-end justify-content-center">
-                <div className="col-auto">
-                  <div className="partner-logo" style={{ 
-                    padding: '15px 25px',
-                    backgroundColor: 'rgba(255,255,255,0.1)',
-                    borderRadius: '8px',
-                    margin: '10px',
-                    transition: 'all 0.3s ease',
-                    minHeight: '70px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: '1px solid rgba(255,255,255,0.2)'
-                  }}>
-                    <img 
-                      src="/assets/img/dvla/dvla.png" 
-                      alt="DVLA - Driver and Vehicle Licensing Agency"
-                      style={{
-                        height: '80px',
-                        width: 'auto',
-                        objectFit: 'contain',
-                        opacity: '0.9'
-                      }}
-                    />
-                  </div>
-                </div>
-                <div className="col-auto">
-                  <div className="partner-logo" style={{ 
-                    padding: '15px 25px',
-                    backgroundColor: 'rgba(255,255,255,0.1)',
-                    borderRadius: '8px',
-                    margin: '10px',
-                    transition: 'all 0.3s ease',
-                    minHeight: '70px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: '1px solid rgba(255,255,255,0.2)'
-                  }}>                    <img 
-                      src="/assets/img/dvla/logo_nv.svg" 
-                      alt="NMVTIS - National Motor Vehicle Title Information System"
-                      style={{
-                        height: '80px',
-                        width: 'auto',
-                        objectFit: 'contain',
-                        opacity: '0.9'
-                      }}
-                      onError={(e) => {
-                        console.log('NMVTIS image failed to load');
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'block';
-                      }}
-                    />
-                    <div style={{
-                      display: 'none',
-                      color: 'white',
-                      fontWeight: 'bold',
-                      fontSize: '14px',
-                      textAlign: 'center',
-                      letterSpacing: '1px'
-                    }}>
-                      NMVTIS
-                      <div style={{ fontSize: '10px', opacity: '0.7', marginTop: '2px' }}>
-                        US Database
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
+            <div className="footer-badges">
+              <img src="https://epicvin.com/img2/security/png/niada-logo.png" alt="NIADA" />
+              <img src="https://epicvin.com/img2/security/svg/blockchain-icon.svg" alt="Blockchain" />
+              <img src="https://epicvin.com/img2/security/png/nmvtis-logo@2x.png" alt="NMVTIS" />
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="copyright-wrap">
         <div className="container">
-          <div className="row gy-3 justify-content-md-between justify-content-center">            <div className="col-auto align-self-center">
-              <p className="copyright-text text-center">
-                © <Link href="#">Car Check</Link> 2014 | All Rights Reserved
-              </p>
-            </div>
-            <div className="col-auto">
-              <div className="footer-links">
-                <Link href="/">Terms &amp; Conditions</Link>
-                <Link href="/">Privacy Policy</Link>
-                <Link href="/">Data Security</Link>
-                <Link href="/">Contact Us</Link>
+          <div className="footer-main-section">
+            <div className="row">
+              <div className="col-lg-3 col-md-6">
+                <div className="footer-widget-modern">
+                  <h4 className="footer-widget-title">Customer Service</h4>
+                  <div className="footer-contact-info">
+                    <p className="contact-time">7 am - 6 pm EST Monday - Friday</p>
+                    <p className="contact-address">
+                      2980 NE 207th St, Suite 300-189<br />
+                      Aventura, FL 33180 USA
+                    </p>
+                  </div>
+                  <div className="footer-social-links">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-youtube" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="col-lg-2 col-md-6">
+                <div className="footer-widget-modern">
+                  <h4 className="footer-widget-title">Company</h4>
+                  <ul className="footer-links-modern">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#affiliate">Affiliate Program</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="col-lg-2 col-md-6">
+                <div className="footer-widget-modern">
+                  <h4 className="footer-widget-title">Legal</h4>
+                  <ul className="footer-links-modern">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#refund">Refund Policy</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="col-lg-2 col-md-6">
+                <div className="footer-widget-modern">
+                  <h4 className="footer-widget-title">Services</h4>
+                  <ul className="footer-links-modern">
+                    <li><a href="#dmv">DMV VIN Check</a></li>
+                    <li><a href="#motorcycle">Motorcycle VIN Check</a></li>
+                    <li><a href="#rv">RV VIN Lookup</a></li>
+                    <li><a href="#plate">License Plate Lookup</a></li>
+                    <li><a href="#sample">Sample Report</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="col-lg-3 col-md-6">
+                <div className="footer-widget-modern">
+                  <h4 className="footer-widget-title">Subscribe to Our Newsletter</h4>
+                  <form className="newsletter-form-modern">
+                    <input 
+                      type="email" 
+                      placeholder="Enter your email"
+                      className="newsletter-input-modern"
+                    />
+                    <button type="submit" className="newsletter-btn-modern">
+                      Subscribe
+                    </button>
+                  </form>
+                  <div className="footer-app-download">
+                    <p className="app-text">Download our app</p>
+                    <a href="#" className="app-link">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+
+        <div className="footer-bottom">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-12 text-center">
+                <p className="copyright-text-modern">
+                  © 2012 - 2025 Car Check Store Vehicle History Reports. All Rights Reserved. 
+                  Use of this Website constitutes acceptance of our{' '}
+                  <a href="#terms">Terms & Conditions</a>,{' '}
+                  <a href="#privacy">Privacy Policy</a>,{' '}
+                  <a href="#refund">Refund Policy</a>.{' '}
+                  This site is owned and operated by Car Check Store - an approved NMVTIS data provider.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <style jsx>{`
+        .modern-footer {
+          background: #1e293b;
+          color: white;
+        }
+
+        .footer-cta-section {
+          background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+          padding: 60px 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-cta-title {
+          font-size: 36px;
+          font-weight: 800;
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        .footer-cta-subtitle {
+          font-size: 18px;
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 0;
+        }
+
+        .footer-vin-input {
+          background: white;
+          border-radius: 12px;
+          padding: 20px;
+        }
+
+        .tab-selector-footer {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 15px;
+          border-bottom: 2px solid #e2e8f0;
+        }
+
+        .tab-btn-footer {
+          background: none;
+          border: none;
+          padding: 10px 20px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #64748b;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: relative;
+        }
+
+        .tab-btn-footer.active {
+          color: #E8092E;
+        }
+
+        .tab-btn-footer.active::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: #E8092E;
+        }
+
+        .vin-input-form-footer {
+          display: flex;
+          gap: 10px;
+        }
+
+        .vin-input-footer {
+          flex: 1;
+          padding: 12px 16px;
+          border: 2px solid #e2e8f0;
+          border-radius: 8px;
+          font-size: 14px;
+        }
+
+        .check-btn-footer {
+          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          color: white;
+          border: none;
+          padding: 12px 30px;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          white-space: nowrap;
+        }
+
+        .footer-badges {
+          display: flex;
+          gap: 30px;
+          margin-top: 40px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .footer-badges img {
+          height: 40px;
+          opacity: 0.7;
+          filter: brightness(0) invert(1);
+        }
+
+        .footer-main-section {
+          padding: 60px 0;
+        }
+
+        .footer-widget-modern {
+          margin-bottom: 30px;
+        }
+
+        .footer-widget-title {
+          font-size: 18px;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 20px;
+        }
+
+        .footer-contact-info {
+          margin-bottom: 20px;
+        }
+
+        .contact-time {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.9);
+          margin-bottom: 10px;
+        }
+
+        .contact-address {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 1.6;
+        }
+
+        .footer-social-links {
+          display: flex;
+          gap: 12px;
+        }
+
+        .footer-social-links a {
+          width: 40px;
+          height: 40px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          transition: all 0.3s ease;
+        }
+
+        .footer-social-links a:hover {
+          background: #E8092E;
+          transform: translateY(-2px);
+        }
+
+        .footer-links-modern {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        .footer-links-modern li {
+          margin-bottom: 10px;
+        }
+
+        .footer-links-modern a {
+          color: rgba(255, 255, 255, 0.7);
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.3s ease;
+        }
+
+        .footer-links-modern a:hover {
+          color: #E8092E;
+        }
+
+        .newsletter-form-modern {
+          margin-bottom: 20px;
+        }
+
+        .newsletter-input-modern {
+          width: 100%;
+          padding: 12px 16px;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 0.05);
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        .newsletter-input-modern::placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        .newsletter-btn-modern {
+          width: 100%;
+          padding: 12px;
+          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          color: white;
+          border: none;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .newsletter-btn-modern:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(232, 9, 46, 0.3);
+        }
+
+        .app-text {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 10px;
+        }
+
+        .app-link img {
+          height: 40px;
+          width: auto;
+        }
+
+        .footer-bottom {
+          background: #0f172a;
+          padding: 30px 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .copyright-text-modern {
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 1.7;
+          margin: 0;
+        }
+
+        .copyright-text-modern a {
+          color: #E8092E;
+          text-decoration: none;
+        }
+
+        .copyright-text-modern a:hover {
+          text-decoration: underline;
+        }
+
+        @media (max-width: 991px) {
+          .footer-cta-title {
+            font-size: 28px;
+            text-align: center;
+          }
+
+          .footer-cta-subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+          }
+
+          .footer-badges {
+            flex-wrap: wrap;
+          }
+
+          .footer-main-section {
+            padding: 40px 0;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .footer-cta-section {
+            padding: 40px 0;
+          }
+
+          .footer-cta-title {
+            font-size: 24px;
+          }
+
+          .vin-input-form-footer {
+            flex-direction: column;
+          }
+
+          .check-btn-footer {
+            width: 100%;
+          }
+        }
+      `}</style>
+    </>
   );
 };
 

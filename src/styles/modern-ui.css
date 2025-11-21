@@ -1,0 +1,405 @@
+/* Modern UI Styles - EpicVIN Inspired */
+
+/* Global Overrides */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+/* Add padding for fixed header */
+body {
+  padding-top: 75px;
+}
+
+/* Modern Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Modern Buttons */
+.btn-modern {
+  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(232, 9, 46, 0.3);
+  color: white;
+}
+
+.btn-modern-outline {
+  background: transparent;
+  color: #E8092E;
+  border: 2px solid #E8092E;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-modern-outline:hover {
+  background: #E8092E;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Modern Cards */
+.card-modern {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Modern Shadows */
+.shadow-sm-modern {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-modern {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-lg-modern {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Modern Gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #f8fafc 0%, #fee2e2 100%);
+}
+
+.gradient-light {
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+/* Modern Spacing */
+.space-modern-sm {
+  padding: 40px 0;
+}
+
+.space-modern {
+  padding: 80px 0;
+}
+
+.space-modern-lg {
+  padding: 120px 0;
+}
+
+/* Modern Containers */
+.container-modern {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Modern Borders */
+.border-radius-sm {
+  border-radius: 8px;
+}
+
+.border-radius-modern {
+  border-radius: 12px;
+}
+
+.border-radius-lg {
+  border-radius: 16px;
+}
+
+.border-radius-xl {
+  border-radius: 20px;
+}
+
+/* Modern Colors */
+.text-primary-modern {
+  color: #E8092E;
+}
+
+.text-secondary-modern {
+  color: #64748b;
+}
+
+.text-dark-modern {
+  color: #1e293b;
+}
+
+.bg-light-modern {
+  background-color: #f8fafc;
+}
+
+.bg-white-modern {
+  background-color: #ffffff;
+}
+
+/* Modern Input Fields */
+.input-modern {
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.input-modern:focus {
+  outline: none;
+  border-color: #E8092E;
+  box-shadow: 0 0 0 3px rgba(232, 9, 46, 0.1);
+}
+
+.input-modern::placeholder {
+  color: #94a3b8;
+}
+
+/* Modern Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Modern Hover Effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+.hover-scale {
+  transition: all 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Modern Section Headers */
+.section-header-modern {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header-modern h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.section-header-modern p {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Modern Grid */
+.grid-modern {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-modern-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-modern-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-modern-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Modern Badges */
+.badge-modern {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.badge-modern-outline {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #E8092E;
+  color: #E8092E;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Modern Icons */
+.icon-wrapper-modern {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  border-radius: 12px;
+  color: white;
+  font-size: 28px;
+}
+
+/* Modern Lists */
+.list-modern {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-modern li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.list-modern li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #E8092E;
+  font-weight: bold;
+}
+
+/* Modern Dividers */
+.divider-modern {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+  margin: 40px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .section-header-modern h2 {
+    font-size: 32px;
+  }
+
+  .grid-modern-2,
+  .grid-modern-3,
+  .grid-modern-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .space-modern {
+    padding: 60px 0;
+  }
+
+  .space-modern-lg {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header-modern h2 {
+    font-size: 28px;
+  }
+
+  .section-header-modern p {
+    font-size: 16px;
+  }
+
+  .space-modern-sm {
+    padding: 30px 0;
+  }
+
+  .space-modern {
+    padding: 50px 0;
+  }
+
+  body {
+    padding-top: 65px;
+  }
+}
+
+/* Override existing styles */
+.bg-smoke {
+  background: #f8fafc !important;
+}
+
+/* Update existing components to modern style */
+.about-area-2 {
+  background: #ffffff !important;
+}
+
+.service-area-2 {
+  background: #f8fafc;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #E8092E;
+  color: white;
+}
+
+::-moz-selection {
+  background: #E8092E;
+  color: white;
+}

@@ -328,7 +328,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
-                        Ownership History
+                        <b style={{ color: '#0066CC' }}>Suitable for upto 1000cc Vehicle</b>
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />

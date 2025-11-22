@@ -25,7 +25,7 @@ const ThankYouPage = () => {
       <div className="thank-you-page" style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
       {/* Header Section */}
       <div className="thank-you-header" style={{ 
-        backgroundColor: '#E8092E', 
+        backgroundColor: '#0066CC', 
         color: 'white', 
         padding: '60px 0',
         textAlign: 'center'
@@ -69,13 +69,13 @@ const ThankYouPage = () => {
               <div className="card" style={{ 
                 border: 'none', 
                 borderRadius: '15px', 
-                boxShadow: '0 10px 40px rgba(232, 9, 46, 0.1)',
+                boxShadow: '0 10px 40px rgba(0, 102, 204, 0.1)',
                 marginBottom: '40px'
               }}>
                 <div className="card-body" style={{ padding: '40px' }}>
                   <div className="row">
                     <div className="col-md-8">
-                      <h3 style={{ color: '#E8092E', marginBottom: '20px' }}>
+                      <h3 style={{ color: '#0066CC', marginBottom: '20px' }}>
                         <i className="fas fa-file-alt" style={{ marginRight: '10px' }}></i>
                         Your Report is Being Prepared
                       </h3>
@@ -90,7 +90,7 @@ const ThankYouPage = () => {
                             <span style={{ 
                               width: '25px', 
                               height: '25px', 
-                              backgroundColor: '#E8092E', 
+                              backgroundColor: '#0066CC', 
                               borderRadius: '50%', 
                               display: 'flex', 
                               alignItems: 'center', 
@@ -105,7 +105,7 @@ const ThankYouPage = () => {
                             <span style={{ 
                               width: '25px', 
                               height: '25px', 
-                              backgroundColor: '#E8092E', 
+                              backgroundColor: '#0066CC', 
                               borderRadius: '50%', 
                               display: 'flex', 
                               alignItems: 'center', 
@@ -120,7 +120,7 @@ const ThankYouPage = () => {
                             <span style={{ 
                               width: '25px', 
                               height: '25px', 
-                              backgroundColor: '#E8092E', 
+                              backgroundColor: '#0066CC', 
                               borderRadius: '50%', 
                               display: 'flex', 
                               alignItems: 'center', 
@@ -139,10 +139,10 @@ const ThankYouPage = () => {
                         backgroundColor: '#f8f9fa', 
                         borderRadius: '10px', 
                         padding: '30px 20px',
-                        border: '2px dashed #E8092E'
+                        border: '2px dashed #0066CC'
                       }}>
-                        <i className="fas fa-clock" style={{ fontSize: '3rem', color: '#E8092E', marginBottom: '15px' }}></i>
-                        <h5 style={{ color: '#E8092E', marginBottom: '10px' }}>Estimated Time</h5>
+                        <i className="fas fa-clock" style={{ fontSize: '3rem', color: '#0066CC', marginBottom: '15px' }}></i>
+                        <h5 style={{ color: '#0066CC', marginBottom: '10px' }}>Estimated Time</h5>
                         <p style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#333', margin: '0' }}>
                           With in 24 hours
                         </p>
@@ -163,7 +163,7 @@ const ThankYouPage = () => {
                     marginBottom: '30px',
                     border: '1px solid #f0f0f0'
                   }}>
-                    <h5 style={{ color: '#E8092E', marginBottom: '15px' }}>
+                    <h5 style={{ color: '#0066CC', marginBottom: '15px' }}>
                       <i className="fas fa-envelope" style={{ marginRight: '10px' }}></i>
                       Check Your Email
                     </h5>
@@ -184,7 +184,7 @@ const ThankYouPage = () => {
                     marginBottom: '30px',
                     border: '1px solid #f0f0f0'
                   }}>
-                    <h5 style={{ color: '#E8092E', marginBottom: '15px' }}>
+                    <h5 style={{ color: '#0066CC', marginBottom: '15px' }}>
                       <i className="fas fa-headset" style={{ marginRight: '10px' }}></i>
                       Need Help?
                     </h5>
@@ -205,7 +205,7 @@ const ThankYouPage = () => {
                   href="/" 
                   className="btn"
                   style={{ 
-                    backgroundColor: '#E8092E', 
+                    backgroundColor: '#0066CC', 
                     color: 'white', 
                     padding: '15px 40px', 
                     borderRadius: '50px', 
@@ -217,8 +217,8 @@ const ThankYouPage = () => {
                     display: 'inline-block',
                     transition: 'all 0.3s ease'
                   }}
-                  onMouseOver={(e) => e.target.style.backgroundColor = '#c8072a'}
-                  onMouseOut={(e) => e.target.style.backgroundColor = '#E8092E'}
+                  onMouseOver={(e) => e.target.style.backgroundColor = '#0052A3'}
+                  onMouseOut={(e) => e.target.style.backgroundColor = '#0066CC'}
                 >
                   <i className="fas fa-home" style={{ marginRight: '8px' }}></i>
                   Back to Home
@@ -228,23 +228,23 @@ const ThankYouPage = () => {
                   className="btn"
                   style={{ 
                     backgroundColor: 'transparent', 
-                    color: '#E8092E', 
+                    color: '#0066CC', 
                     padding: '15px 40px', 
                     borderRadius: '50px', 
                     textDecoration: 'none',
                     fontSize: '1.1rem',
                     fontWeight: '600',
-                    border: '2px solid #E8092E',
+                    border: '2px solid #0066CC',
                     display: 'inline-block',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseOver={(e) => {
-                    e.target.style.backgroundColor = '#E8092E';
+                    e.target.style.backgroundColor = '#0066CC';
                     e.target.style.color = 'white';
                   }}
                   onMouseOut={(e) => {
                     e.target.style.backgroundColor = 'transparent';
-                    e.target.style.color = '#E8092E';
+                    e.target.style.color = '#0066CC';
                   }}
                 >
                   <i className="fas fa-phone" style={{ marginRight: '8px' }}></i>

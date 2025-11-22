@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Analytics googleAnalyticsId="G-0C0XXT0XX7" />
         <RouteScrollToTop />
-        <ScrollToTop smooth color="#E8092E" />
+        <ScrollToTop smooth color="#0066CC" />
         <Routes>
           <Route exact path="/" element={<HomePageTwo />} />
           <Route path="/11235813.html" element={<ThankYouPage />} />

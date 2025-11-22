@@ -26,7 +26,7 @@ p {
 
 /* Modern Buttons */
 .btn-modern {
-  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
   color: white;
   border: none;
   padding: 14px 32px;
@@ -41,14 +41,14 @@ p {
 
 .btn-modern:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(232, 9, 46, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
   color: white;
 }
 
 .btn-modern-outline {
   background: transparent;
-  color: #E8092E;
-  border: 2px solid #E8092E;
+  color: #0066CC;
+  border: 2px solid #0066CC;
   padding: 14px 32px;
   border-radius: 10px;
   font-weight: 600;
@@ -60,7 +60,7 @@ p {
 }
 
 .btn-modern-outline:hover {
-  background: #E8092E;
+  background: #0066CC;
   color: white;
   transform: translateY(-2px);
 }
@@ -95,7 +95,7 @@ p {
 
 /* Modern Gradients */
 .gradient-primary {
-  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
 }
 
 .gradient-secondary {
@@ -145,7 +145,7 @@ p {
 
 /* Modern Colors */
 .text-primary-modern {
-  color: #E8092E;
+  color: #0066CC;
 }
 
 .text-secondary-modern {
@@ -177,8 +177,8 @@ p {
 
 .input-modern:focus {
   outline: none;
-  border-color: #E8092E;
-  box-shadow: 0 0 0 3px rgba(232, 9, 46, 0.1);
+  border-color: #0066CC;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
 .input-modern::placeholder {
@@ -273,7 +273,7 @@ p {
 .badge-modern {
   display: inline-block;
   padding: 8px 16px;
-  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
   color: white;
   border-radius: 20px;
   font-size: 14px;
@@ -283,8 +283,8 @@ p {
 .badge-modern-outline {
   display: inline-block;
   padding: 8px 16px;
-  border: 2px solid #E8092E;
-  color: #E8092E;
+  border: 2px solid #0066CC;
+  color: #0066CC;
   border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
@@ -297,7 +297,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
   border-radius: 12px;
   color: white;
   font-size: 28px;
@@ -320,7 +320,7 @@ p {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #E8092E;
+  color: #0066CC;
   font-weight: bold;
 }
 
@@ -395,11 +395,11 @@ html {
 
 /* Selection color */
 ::selection {
-  background: #E8092E;
+  background: #0066CC;
   color: white;
 }
 
 ::-moz-selection {
-  background: #E8092E;
+  background: #0066CC;
   color: white;
 }

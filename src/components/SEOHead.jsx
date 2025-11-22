@@ -212,8 +212,8 @@ const SEOHead = ({
       <meta name="twitter:creator" content="@carcheckstore" />
       
       {/* Additional SEO Meta Tags */}
-      <meta name="theme-color" content="#E8092E" />
-      <meta name="msapplication-TileColor" content="#E8092E" />
+      <meta name="theme-color" content="#0066CC" />
+      <meta name="msapplication-TileColor" content="#0066CC" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       

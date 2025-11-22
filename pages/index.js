@@ -135,7 +135,7 @@ const HomePage = () => {
       {active === true && <Preloader />}
 
       {/* Scroll To Top */}
-      <ScrollToTop smooth color="#E8092E" />
+      <ScrollToTop smooth color="#0066CC" />
 
       {/* Header Two */}
       <HeaderTwo />

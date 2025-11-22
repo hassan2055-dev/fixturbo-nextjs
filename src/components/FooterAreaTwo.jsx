@@ -19,7 +19,7 @@ const FooterAreaTwo = () => {
                 <div className="footer-vin-input">
                   <div className="tab-selector-footer">
                     <button className="tab-btn-footer active">by VIN</button>
-                    <button className="tab-btn-footer">by US License Plate</button>
+                    <button className="tab-btn-footer">by License Plate</button>
                   </div>
                   <form className="vin-input-form-footer">
                     <input 
@@ -206,7 +206,7 @@ const FooterAreaTwo = () => {
         }
 
         .tab-btn-footer.active {
-          color: #E8092E;
+          color: #0066CC;
         }
 
         .tab-btn-footer.active::after {
@@ -216,7 +216,7 @@ const FooterAreaTwo = () => {
           left: 0;
           right: 0;
           height: 2px;
-          background: #E8092E;
+          background: #0066CC;
         }
 
         .vin-input-form-footer {
@@ -233,7 +233,7 @@ const FooterAreaTwo = () => {
         }
 
         .check-btn-footer {
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           color: white;
           border: none;
           padding: 12px 30px;
@@ -306,7 +306,7 @@ const FooterAreaTwo = () => {
         }
 
         .footer-social-links a:hover {
-          background: #E8092E;
+          background: #0066CC;
           transform: translateY(-2px);
         }
 
@@ -328,7 +328,7 @@ const FooterAreaTwo = () => {
         }
 
         .footer-links-modern a:hover {
-          color: #E8092E;
+          color: #0066CC;
         }
 
         .newsletter-form-modern {
@@ -352,7 +352,7 @@ const FooterAreaTwo = () => {
         .newsletter-btn-modern {
           width: 100%;
           padding: 12px;
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           color: white;
           border: none;
           border-radius: 8px;
@@ -363,7 +363,7 @@ const FooterAreaTwo = () => {
 
         .newsletter-btn-modern:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 20px rgba(232, 9, 46, 0.3);
+          box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
         }
 
         .app-text {
@@ -391,7 +391,7 @@ const FooterAreaTwo = () => {
         }
 
         .copyright-text-modern a {
-          color: #E8092E;
+          color: #0066CC;
           text-decoration: none;
         }
 

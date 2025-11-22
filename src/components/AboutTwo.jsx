@@ -181,7 +181,7 @@ const AboutTwo = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           border-radius: 16px;
           color: white;
           font-size: 36px;
@@ -260,7 +260,7 @@ const AboutTwo = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           border-radius: 12px;
           color: white !important;
           font-size: 28px;

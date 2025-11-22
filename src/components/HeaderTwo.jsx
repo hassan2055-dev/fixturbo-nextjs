@@ -65,7 +65,7 @@ const HeaderTwo = () => {
               <div className="col-auto">
                 <div className="modern-logo">
                   <Link href="/">
-                    <img src="assets/img/logo.svg" alt="Car Check Store" />
+                    <img src="./logo.png" alt="Car Check Store" />
                   </Link>
                 </div>
               </div>
@@ -117,7 +117,7 @@ const HeaderTwo = () => {
           <div className="mobile-menu-content">
             <div className="mobile-menu-header">
               <Link href="/">
-                <img src="assets/img/logo.svg" alt="Car Check Store" />
+                <img src="/logo.png" alt="Car Check Store" />
               </Link>
               <button className="close-menu" onClick={mobileMenu}>
                 <i className="fas fa-times" />
@@ -203,7 +203,7 @@ const HeaderTwo = () => {
         }
 
         .nav-link:hover {
-          color: #E8092E;
+          color: #0066CC;
         }
 
         .nav-link::after {
@@ -213,7 +213,7 @@ const HeaderTwo = () => {
           left: 0;
           width: 0;
           height: 2px;
-          background: #E8092E;
+          background: #0066CC;
           transition: width 0.3s ease;
         }
 
@@ -232,7 +232,7 @@ const HeaderTwo = () => {
           align-items: center;
           gap: 8px;
           padding: 10px 24px;
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           color: white;
           text-decoration: none;
           border-radius: 8px;
@@ -243,7 +243,7 @@ const HeaderTwo = () => {
 
         .login-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 8px 20px rgba(232, 9, 46, 0.3);
+          box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
           color: white;
         }
 
@@ -349,7 +349,7 @@ const HeaderTwo = () => {
 
         .mobile-nav a:hover {
           background: #f1f5f9;
-          color: #E8092E;
+          color: #0066CC;
         }
 
         .mobile-menu-footer {
@@ -364,7 +364,7 @@ const HeaderTwo = () => {
           justify-content: center;
           gap: 8px;
           padding: 15px;
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           color: white;
           text-decoration: none;
           border-radius: 8px;

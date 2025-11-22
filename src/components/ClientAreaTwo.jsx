@@ -136,7 +136,7 @@ const ClientAreaTwo = () => {
       </div>      {/*==============================
     Testimonial Area  
     ==============================*/}
-      <div className="testimonial-area-2 overflow-hidden" style={{ background: 'linear-gradient(135deg, #E8092E 0%, #b30722 100%)' }}>
+      <div className="testimonial-area-2 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0066CC 0%, #004a8d 100%)' }}>
         <div className="container">
           <div className="row justify-content-end">
             <div className="col-lg-7">

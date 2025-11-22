@@ -52,7 +52,7 @@ const PricingPlanTwo = () => {
     submitButton: {
       width: '100%',
       padding: '15px',
-      background: '#E8092E',
+      background: '#0066CC',
       color: 'white',
       border: 'none',
       borderRadius: '5px',
@@ -83,7 +83,7 @@ const PricingPlanTwo = () => {
 
   // Base prices in USD
   const BASE_PRICES = {
-    silver: 30.99,
+    silver: 40.99,
     gold: 60.99,
     platinum: 90.99
   };
@@ -362,7 +362,7 @@ const PricingPlanTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6" >
               <div className="pricing-card style2 pricing-card-active">
                 <div className="pricing-card-icon-wrap">
                   <div className="pricing-card_icon">
@@ -381,7 +381,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
-                        <b style={{ color: 'red' }}>Suitable for 1500cc Vehicle</b>
+                        <b style={{ color: '#0066CC' }}>Suitable for 1500cc Vehicle</b>
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
@@ -430,7 +430,7 @@ const PricingPlanTwo = () => {
                       </li>
                       <li >
                         <i className="fas fa-angle-double-right" />
-                        <b style={{ color: 'red' }}> Suitable for 4x4 and 2000cc</b>
+                        <b style={{ color: '#0066CC' }}> Suitable for 4x4 and 2000cc</b>
                       </li>
                       <li>
                         <i className="fas fa-angle-double-right" />
@@ -489,7 +489,7 @@ const PricingPlanTwo = () => {
               &times;
             </span>
             
-            <h3 style={{ marginBottom: '20px', color: '#E8092E' }}>
+            <h3 style={{ marginBottom: '20px', color: '#0066CC' }}>
               Enter Your Details - {selectedPlan?.charAt(0).toUpperCase() + selectedPlan?.slice(1)} Plan
             </h3>
             

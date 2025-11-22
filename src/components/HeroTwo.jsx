@@ -44,7 +44,7 @@ const HeroTwo = () => {
                     className={`tab-btn ${activeTab === 'plate' ? 'active' : ''}`}
                     onClick={() => setActiveTab('plate')}
                   >
-                    by US License Plate
+                    by License Plate
                   </button>
                 </div>
                 
@@ -65,7 +65,7 @@ const HeroTwo = () => {
                   <div className="input-help">
                     <a href="#" className="help-link">Where to find the VIN?</a>
                     <span className="separator">•</span>
-                    <a href="#" className="help-link">No VIN? <span>Get EpicVIN reports</span></a>
+                    <a href="#" className="help-link">No VIN? <span>Get CarCheck VIN reports</span></a>
                   </div>
                 </form>
                 
@@ -124,7 +124,7 @@ const HeroTwo = () => {
           right: 0;
           width: 50%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(232, 9, 46, 0.05) 0%, rgba(220, 38, 38, 0.05) 100%);
+          background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 82, 163, 0.05) 100%);
           z-index: 0;
         }
 
@@ -181,7 +181,7 @@ const HeroTwo = () => {
         }
 
         .tab-btn.active {
-          color: #E8092E;
+          color: #0066CC;
         }
 
         .tab-btn.active::after {
@@ -191,7 +191,7 @@ const HeroTwo = () => {
           left: 0;
           right: 0;
           height: 2px;
-          background: #E8092E;
+          background: #0066CC;
         }
 
         .input-wrapper {
@@ -211,12 +211,12 @@ const HeroTwo = () => {
 
         .vin-input:focus {
           outline: none;
-          border-color: #E8092E;
-          box-shadow: 0 0 0 3px rgba(232, 9, 46, 0.1);
+          border-color: #0066CC;
+          box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
         }
 
         .check-btn {
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           color: white;
           border: none;
           padding: 16px 40px;
@@ -230,7 +230,7 @@ const HeroTwo = () => {
 
         .check-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(232, 9, 46, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 102, 204, 0.3);
         }
 
         .input-help {
@@ -247,11 +247,11 @@ const HeroTwo = () => {
         }
 
         .help-link:hover {
-          color: #E8092E;
+          color: #0066CC;
         }
 
         .help-link span {
-          color: #E8092E;
+          color: #0066CC;
           font-weight: 600;
         }
 
@@ -299,7 +299,7 @@ const HeroTwo = () => {
         .stat-icon {
           width: 50px;
           height: 50px;
-          background: linear-gradient(135deg, #E8092E 0%, #dc2626 100%);
+          background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
           border-radius: 12px;
           display: flex;
           align-items: center;
